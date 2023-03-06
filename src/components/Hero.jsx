@@ -13,7 +13,7 @@ function Testimonial() {
       </div>
       <blockquote className="mt-2">
         <p className="font-display text-xl font-medium text-red-500">
-          “I'm blown away by ChiyuToken's innovative Web 3.0 tech and Tallano gold backing. The returns have been impressive so far - this is a solid cryptocurrency investment that I highly recommend.”
+          “I&apos;m blown away by ChiyuToken&apos;s innovative Web 3.0 tech and Tallano gold backing. The returns have been impressive so far - this is a solid cryptocurrency investment that I highly recommend.”
         </p>
       </blockquote>
       <figcaption className="mt-2 text-sm text-slate-500">

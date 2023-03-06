@@ -18,7 +18,7 @@ export function Introduction() {
                 <p className="mt-4">
                     Are you passionate about using technology to make a positive impact in the world? Do you believe in
                     the potential of cryptocurrency to create opportunities for those who have been historically
-                    marginalized? If so, you'll be excited to hear about ChiyuToken, a new cryptocurrency backed by
+                    marginalized? If so, you&apos;ll be excited to hear about ChiyuToken, a new cryptocurrency backed by
                     Tallano gold. With its potential to disrupt traditional power structures and provide new economic
                     opportunities for individuals, ChiyuToken could be the key to toppling the oligarchy and helping to
                     alleviate poverty. Are you ready to be a part of this revolution?
@@ -30,7 +30,7 @@ export function Introduction() {
                     for positive change, positioning the listener as an agent of that change.
                 </p>
                 <p className="mt-4">
-                    But of course, that's all a big fat lie. There are several warning signs that a cryptocurrency token
+                    But of course, that&apos;s all a big fat lie. There are several warning signs that a cryptocurrency token
                     may be a scam, including:
                 </p>
                 <ul role="list" className="mt-8 space-y-3">
@@ -40,7 +40,7 @@ export function Introduction() {
                         'Use of aggressive or misleading marketing tactics',
                         'Pressure to invest quickly or to recruit others to invest',
                         'Lack of a clear use case or value proposition for the token',
-                        'Unreasonable or unfounded claims about the token\'s technology or potential future value',
+                        'Unreasonable or unfounded claims about the token&apos;s technology or potential future value',
                         'Lack of regulation or oversight by reputable authorities or industry bodies.'
                     ].map((feature) => (
                         <li key={feature} className="flex">
@@ -50,7 +50,7 @@ export function Introduction() {
                     ))}
                 </ul>
                 <p className="mt-8">
-                    It's important to conduct thorough research and due diligence before investing in any cryptocurrency
+                    It&apos;s important to conduct thorough research and due diligence before investing in any cryptocurrency
                     token or project, and to seek advice from trusted financial professionals if you have any doubts or
                     concerns.
                 </p>
