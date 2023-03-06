@@ -20,48 +20,48 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Everything Starts as a Square - Get lost in the world of icon design
+            ChiyuToken - Web 3.0
         </title>
         <meta
           name="description"
-          content="A book and video course that teaches you how to design your own icons from scratch. "
+          content="Backed by the Power of Tallano Gold!"
         />
       </Head>
       <Hero />
       <Introduction />
-      <NavBar />
-      <TableOfContents />
-      <Testimonial
-        id="testimonial-from-tommy-stroman"
-        author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
-          image: avatarImage1,
-        }}
-      >
-        <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
-        </p>
-      </Testimonial>
-      <Screencasts />
-      <Testimonial
-        id="testimonial-from-gerardo-stark"
-        author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
-          image: avatarImage2,
-        }}
-      >
-        <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
-        </p>
-      </Testimonial>
-      <Resources />
-      <FreeChapters />
-      <Pricing />
-      <Testimonials />
+      {/*<NavBar />*/}
+      {/*<TableOfContents />*/}
+      {/*<Testimonial*/}
+      {/*  id="testimonial-from-tommy-stroman"*/}
+      {/*  author={{*/}
+      {/*    name: 'Tommy Stroman',*/}
+      {/*    role: 'Front-end developer',*/}
+      {/*    image: avatarImage1,*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <p>*/}
+      {/*    “I didn’t know a thing about icon design until I read this book. Now I*/}
+      {/*    can create any icon I need in no time. Great resource!”*/}
+      {/*  </p>*/}
+      {/*</Testimonial>*/}
+      {/*<Screencasts />*/}
+      {/*<Testimonial*/}
+      {/*  id="testimonial-from-gerardo-stark"*/}
+      {/*  author={{*/}
+      {/*    name: 'Gerardo Stark',*/}
+      {/*    role: 'Creator of Pandemicons',*/}
+      {/*    image: avatarImage2,*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <p>*/}
+      {/*    “I’ve tried to create my own icons in the past but quickly got*/}
+      {/*    frustrated and gave up. Now I sell my own custom icon sets online.”*/}
+      {/*  </p>*/}
+      {/*</Testimonial>*/}
+      {/*<Resources />*/}
+      {/*<FreeChapters />*/}
+      {/*<Pricing />*/}
+      {/*<Testimonials />*/}
       <Author />
       <Footer />
     </>
