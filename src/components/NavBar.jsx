@@ -8,15 +8,15 @@ const sections = [
     id: 'table-of-contents',
     title: (
       <>
-        <span className="hidden lg:inline">Table of contents</span>
+        <span className="hidden lg:inline">Quick Start</span>
         <span className="lg:hidden">Contents</span>
       </>
     ),
   },
-  { id: 'screencasts', title: 'Screencasts' },
+  { id: 'screencasts', title: 'Overview' },
   { id: 'resources', title: 'Resources' },
-  { id: 'pricing', title: 'Pricing' },
-  { id: 'author', title: 'Author' },
+  { id: 'pricing', title: 'Packages' },
+  { id: 'author', title: 'Web 3.0' },
 ]
 
 function MenuIcon({ open, ...props }) {

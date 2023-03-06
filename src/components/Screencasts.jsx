@@ -1,117 +1,99 @@
 import Image from 'next/image'
 
-import { Container } from '@/components/Container'
-import { SectionHeading } from '@/components/SectionHeading'
-import duotoneImage from '@/images/screencasts/duotone.svg'
-import gridsImage from '@/images/screencasts/grids.svg'
-import setupImage from '@/images/screencasts/setup.svg'
-import strokesImage from '@/images/screencasts/strokes.svg'
+import {Container} from '@/components/Container'
+import {SectionHeading} from '@/components/SectionHeading'
+import {ArrowPathIcon, CloudArrowUpIcon, CurrencyDollarIcon, LockClosedIcon} from '@heroicons/react/20/solid'
+import receiptPercentIcon from "@heroicons/react/20/solid/esm/ReceiptPercentIcon";
+import musicalNoteIcon from "@heroicons/react/20/solid/esm/MusicalNoteIcon";
 
-const videos = [
-  {
-    title: 'Getting started with Figma',
-    description:
-      'Get familiar with the Figma UI, the different tools it offers, and the most important features.',
-    image: setupImage,
-    runtime: { minutes: 16, seconds: 54 },
-  },
-  {
-    title: 'Setting up your artboard',
-    description:
-      'Learn how to create a new artboard and configure your grid and rulers for designing icons.',
-    image: gridsImage,
-    runtime: { minutes: 9, seconds: 12 },
-  },
-  {
-    title: 'Designing your first icon',
-    description:
-      'Using basic shapes and boolean operations, learn how to design your own notification icon from scratch.',
-    image: strokesImage,
-    runtime: { minutes: 23, seconds: 25 },
-  },
-  {
-    title: 'Advanced design techniques',
-    description:
-      'Learn the techniques you need to know to adapt your original icon to a modern duotone style.',
-    image: duotoneImage,
-    runtime: { minutes: 28, seconds: 44 },
-  },
+const features = [
+    {
+        name: 'Double Your Money!',
+        description:
+            'Double your money in one (1) day, thirty (30) days or forty five (45) days depending on the promotion you choose!',
+        href: 'https://www.youtube.com/@Coffeezilla',
+        icon: CurrencyDollarIcon,
+    },
+    {
+        name: 'Referral Commissions!',
+        description:
+            'Get up to 5% referral commissions for each additional investor you bring in, and get a chance to win a new motorcycle, car, or a rich rich syoke!',
+        href: 'https://www.youtube.com/watch?v=SBGfHk91Vrk&ab_channel=TED-Ed',
+        icon: receiptPercentIcon,
+    },
+    {
+        name: 'Stuck on you...',
+        description:
+            'Be serenaded by our one and only patron with his favorite songs!',
+        href: 'https://www.youtube.com/watch?v=vkwFVVdiZ_4&ab_channel=ChinkPositive',
+        icon: musicalNoteIcon,
+    },
 ]
 
+
 function PlayIcon(props) {
-  return (
-    <svg
-      aria-hidden="true"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      viewBox="0 0 16 16"
-      {...props}
-    >
-      <path d="M6.75 10.25v-4.5L10.25 8l-3.5 2.25Z" />
-      <circle cx="8" cy="8" r="6.25" fill="none" />
-    </svg>
-  )
+    return (
+        <svg
+            aria-hidden="true"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            viewBox="0 0 16 16"
+            {...props}
+        >
+            <path d="M6.75 10.25v-4.5L10.25 8l-3.5 2.25Z"/>
+            <circle cx="8" cy="8" r="6.25" fill="none"/>
+        </svg>
+    )
 }
 
 export function Screencasts() {
-  return (
-    <section
-      id="screencasts"
-      aria-labelledby="screencasts-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
-    >
-      <Container>
-        <SectionHeading number="2" id="screencasts-title">
-          Screencasts
-        </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Over an hour of high quality, step-by-step video content to sharpen
-          your icon design workflow.
-        </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Learn how to design your very first icons in a series of screencasts
-          that will teach you everything you need to know to go from beginner to
-          pro in just over an hour.
-        </p>
-      </Container>
-      <Container size="lg" className="mt-16">
-        <ol
-          role="list"
-          className="grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4"
+    return (
+        <section
+            id="screencasts"
+            aria-labelledby="screencasts-title"
+            className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
         >
-          {videos.map((video) => (
-            <li key={video.title} className="[counter-increment:video]">
-              <div
-                className="relative flex h-44 items-center justify-center rounded-2xl px-6 shadow-lg"
-                style={{
-                  backgroundImage:
-                    'conic-gradient(from -49.8deg at 50% 50%, #7331FF 0deg, #00A3FF 59.07deg, #4E51FF 185.61deg, #39DBFF 284.23deg, #B84FF1 329.41deg, #7331FF 360deg)',
-                }}
-              >
-                <div className="flex overflow-hidden rounded shadow-sm">
-                  <Image src={video.image} alt="" unoptimized />
+            <Container>
+                <SectionHeading number="2" id="screencasts-title">
+                    Overview
+                </SectionHeading>
+                <h2 className="text-6xl my-6 font-extrabold">What makes <span
+                    className="text-subtle">ChiyuToken</span> Special?</h2>
+                <p className="mt-8 font-display text-2xl tracking-tight text-slate-900">
+                    ChiyuToken offers a range of cutting-edge features that set it apart from other cryptocurrencies. It
+                    is built on Web 3.0 technology, which ensures fast and secure transactions that are resistant to
+                    censorship and tampering.</p>
+                <p className="mt-8 font-display tracking-tight text-2xl text-slate-900">
+                    ChiyuToken also boasts robust encryption protocols that keep user data and
+                    transactions safe from hackers and other malicious actors. The token is backed by the Tallano gold
+                    reserves, providing a level of stability and security that is unrivaled in the cryptocurrency world.
+                    In addition, ChiyuToken offers easy integration with popular wallets and exchanges, making it simple
+                    for users to buy, sell, and store their tokens.
+                </p>
+            </Container>
+            <Container size="lg" className="mt-16">
+                <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                    <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+                        {features.map((feature) => (
+                            <div key={feature.name} className="flex flex-col">
+                                <dt className="flex items-center gap-x-3 font-semibold leading-7 text-gray-900 text-3xl">
+                                    <feature.icon className="h-5 w-5 flex-none text-blue-500" aria-hidden="true" />
+                                    {feature.name}
+                                </dt>
+                                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                                    <p className="flex-auto text-2xl">{feature.description}</p>
+                                    <p className="mt-6">
+                                        <a href={feature.href} className="text-sm font-semibold leading-6 text-blue-500">
+                                            Learn more <span aria-hidden="true">→</span>
+                                        </a>
+                                    </p>
+                                </dd>
+                            </div>
+                        ))}
+                    </dl>
                 </div>
-                <div className="absolute bottom-2 left-2 flex items-center rounded-lg bg-black/30 px-1.5 py-0.5 text-sm text-white [@supports(backdrop-filter:blur(0))]:bg-white/10 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
-                  <PlayIcon className="h-4 w-4 fill-current stroke-current" />
-                  <time
-                    dateTime={`${video.runtime.minutes}m ${video.runtime.seconds}s`}
-                    className="ml-2"
-                  >
-                    {`${video.runtime.minutes}:${video.runtime.seconds
-                      .toString()
-                      .padStart(2, '0')}`}
-                  </time>
-                </div>
-              </div>
-              <h3 className="mt-8 text-base font-medium tracking-tight text-slate-900 before:mb-2 before:block before:font-mono before:text-sm before:text-slate-500 before:content-[counter(video,decimal-leading-zero)]">
-                {video.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{video.description}</p>
-            </li>
-          ))}
-        </ol>
-      </Container>
-    </section>
-  )
+            </Container>
+        </section>
+    )
 }

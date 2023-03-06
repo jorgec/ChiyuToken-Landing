@@ -1,31 +1,23 @@
 import { Container } from '@/components/Container'
 import { Expandable } from '@/components/Expandable'
 import { SectionHeading } from '@/components/SectionHeading'
+import {CheckIcon} from "@heroicons/react/20/solid";
 
-const tableOfContents = {
-  'Getting started': {
-    'Getting started': 1,
-    'Intro to Figma': 15,
-    'Setting up your first artboard': 20,
+const steps = [
+  {name: 'Create account', description: 'Vitae sed mi luctus laoreet.', href: '#', status: 'complete'},
+  {
+    name: 'Create your wallet',
+    description: 'Create a Metamask Wallet using either a desktop computer or mobile device. http://metamask.io',
+    href: '#',
+    status: 'current',
   },
-  Fundamentals: {
-    'Strokes and fills': 21,
-    'End points': 22,
-    'Bezier curves': 26,
-    'Designing on a grid': 31,
-    'Vector shapes': 45,
-  },
-  'Boolean operations': {
-    'Combining shapes': 50,
-    'Subtracting shapes': 57,
-    'Intersecting shapes': 66,
-    Flattening: 78,
-  },
-  'Optimizing for production': {
-    'Preparing for SVG': 82,
-    'Configuring your export settings': 88,
-    'Minifying and removing metadata': 95,
-  },
+  {name: 'Load your wallet', description: 'Send Ethereum to your wallet. You can buy Ethereum on MetaMask directly, or through sites like Coinbase, Crypto.com, or Binance and then send them to your wallet.', href: '#', status: 'current'},
+  {name: '...', description: '???', href: '#', status: 'current'},
+  {name: 'Profit', description: 'Connect to Uniswap and trade for ChiyuTokens backed by Tallano GOLD', href: '#', status: 'current'},
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
 }
 
 export function TableOfContents() {
@@ -37,60 +29,80 @@ export function TableOfContents() {
     >
       <Container>
         <SectionHeading number="1" id="table-of-contents-title">
-          Table of contents
+          Quickstart Guide
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Get a look at all of the content covered in the book. Everything you
-          need to know is inside.
-        </p>
-        <p className="mt-4 text-lg tracking-tight text-slate-700">
-          “Everything Starts as a Square” is comprised of 240 tightly edited,
-          highly visual pages designed to teach you everything you need to know
-          about icon design with no unnecessary filler.
-        </p>
-        <Expandable>
-          {({ isExpanded }) => (
-            <>
-              <ol role="list" className="mt-16 space-y-10 sm:space-y-16">
-                {Object.entries(tableOfContents)
-                  .slice(0, isExpanded ? undefined : 2)
-                  .map(([title, pages]) => (
-                    <li key={title}>
-                      <h3 className="font-display text-3xl font-bold tracking-tight text-slate-900">
-                        {title}
-                      </h3>
-                      <ol
-                        role="list"
-                        className="mt-8 divide-y divide-slate-300/30 rounded-2xl bg-slate-50 py-3 px-6 text-base tracking-tight sm:py-7 sm:px-8"
-                      >
-                        {Object.entries(pages).map(([title, pageNumber]) => (
-                          <li
-                            key={title}
-                            className="flex justify-between py-3"
-                            aria-label={`${title} on page ${pageNumber}`}
-                          >
-                            <span
-                              className="font-medium text-slate-900"
-                              aria-hidden="true"
-                            >
-                              {title}
-                            </span>
-                            <span
-                              className="font-mono text-slate-400"
-                              aria-hidden="true"
-                            >
-                              {pageNumber}
-                            </span>
-                          </li>
-                        ))}
-                      </ol>
-                    </li>
-                  ))}
-              </ol>
-              <Expandable.Button>See more</Expandable.Button>
-            </>
-          )}
-        </Expandable>
+        <h2 className="text-6xl my-6 font-extrabold">Find <span className="text-subtle">GOLD</span> in the Philippines</h2>
+        <nav aria-label="Progress">
+          <ol role="list" className="overflow-hidden my-4">
+            {steps.map((step, stepIdx) => (
+                <li key={step.name}
+                    className={classNames(stepIdx !== steps.length - 1 ? 'pb-10' : '', 'relative')}>
+                  {step.status === 'complete' ? (
+                      <>
+                        {stepIdx !== steps.length - 1 ? (
+                            <div
+                                className="absolute top-4 left-4 -ml-px mt-0.5 h-full w-0.5 bg-slate-600"
+                                aria-hidden="true"/>
+                        ) : null}
+                        <a href={step.href} className="group relative flex items-start">
+                  <span className="flex h-9 items-center">
+                    <span
+                        className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-slate-600 group-hover:bg-slate-800">
+                      <CheckIcon className="h-5 w-5 text-white" aria-hidden="true"/>
+                    </span>
+                  </span>
+                          <span className="ml-4 flex min-w-0 flex-col">
+                    <span className="text-3xl">{step.name}</span>
+                    <span className=" text-gray-500">{step.description}</span>
+                  </span>
+                        </a>
+                      </>
+                  ) : step.status === 'current' ? (
+                      <>
+                        {stepIdx !== steps.length - 1 ? (
+                            <div
+                                className="absolute top-4 left-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
+                                aria-hidden="true"/>
+                        ) : null}
+                        <a href={step.href} className="group relative flex items-start"
+                           aria-current="step">
+                  <span className="flex h-9 items-center" aria-hidden="true">
+                    <span
+                        className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-slate-600 bg-white">
+                      <span className="h-2.5 w-2.5 rounded-full bg-slate-600"/>
+                    </span>
+                  </span>
+                          <span className="ml-4 flex min-w-0 flex-col">
+                    <span className="text-2xl text-slate-600">{step.name}</span>
+                    <span className=" text-gray-500">{step.description}</span>
+                  </span>
+                        </a>
+                      </>
+                  ) : (
+                      <>
+                        {stepIdx !== steps.length - 1 ? (
+                            <div
+                                className="absolute top-4 left-4 -ml-px mt-0.5 h-full w-0.5 bg-gray-300"
+                                aria-hidden="true"/>
+                        ) : null}
+                        <a href={step.href} className="group relative flex items-start">
+                  <span className="flex h-9 items-center" aria-hidden="true">
+                    <span
+                        className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-300 bg-white group-hover:border-gray-400">
+                      <span className="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"/>
+                    </span>
+                  </span>
+                          <span className="ml-4 flex min-w-0 flex-col">
+                    <span className=" font-medium text-gray-500">{step.name}</span>
+                    <span className=" text-gray-500">{step.description}</span>
+                  </span>
+                        </a>
+                      </>
+                  )}
+                </li>
+            ))}
+          </ol>
+        </nav>
       </Container>
     </section>
   )
