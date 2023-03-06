@@ -9,14 +9,14 @@ const sections = [
     title: (
       <>
         <span className="hidden lg:inline">Quick Start</span>
-        <span className="lg:hidden">Contents</span>
+        <span className="lg:hidden">Find Gold in the Philippines</span>
       </>
     ),
   },
   { id: 'screencasts', title: 'Overview' },
   { id: 'resources', title: 'Resources' },
   { id: 'pricing', title: 'Packages' },
-  { id: 'author', title: 'Web 3.0' },
+  { id: 'author', title: 'Privacy' },
 ]
 
 function MenuIcon({ open, ...props }) {

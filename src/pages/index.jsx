@@ -14,6 +14,7 @@ import {Testimonial} from '@/components/Testimonial'
 import {Testimonials} from '@/components/Testimonials'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
 import avatarImage2 from '@/images/avatars/avatar-2.png'
+import CookieConsent, { Cookies } from "react-cookie-consent"
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                 />
             </Head>
             <Hero/>
+            <CookieConsent>This website uses cookies backed by Tallano Gold to enhance the user experience.</CookieConsent>
             <Introduction/>
             <NavBar/>
             <TableOfContents/>

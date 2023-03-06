@@ -41,30 +41,59 @@ export function Author() {
                         {/*    Author*/}
                         {/*</SectionHeading>*/}
                         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-                            <span className="block text-blue-600">Web 3.0 –</span> A heads up.
+                            <span className="block text-blue-600">Our Privacy Policy –</span> backed by Tallano Gold.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            Web 3.0, also known as the decentralized web or Web3, is the next generation of the internet
-                            that is designed to be more open, decentralized, and secure. It aims to create a more
-                            user-centric web, where individuals have greater control over their personal data and online
-                            identities, and are empowered to participate in a global, peer-to-peer network without the
-                            need for intermediaries or centralized gatekeepers.
+                            Welcome to our ChiyuToken Privacy Policy!
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            Web 3.0 is built on blockchain technology, which enables secure, transparent, and
-                            tamper-proof transactions and data storage without the need for third-party verification. It
-                            allows for the creation of decentralized applications (dApps) that run on a network of
-                            computers, rather than a central server, enabling greater transparency, efficiency, and
-                            resiliency.
+                            At Alamano White Powder, LLC., we take your privacy seriously, but not really. We want to
+                            assure you that we
+                            will do whatever it takes to protect your personal information, except we won&apos;t
+                            actually
+                            protect it because we&apos;re Alamano White Powder LLC and that&apos;s what we do.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            Overall, Web 3.0 is considered better than the current Web 2.0 because it promises to offer
-                            greater privacy, security, and control for users, while also promoting innovation and new
-                            forms of digital interaction. It could potentially transform the way we conduct business,
-                            communicate, and interact with the world around us.
+
+                            Here are some of the things you can expect from our ChiyuToken Privacy Policy:
+                        </p>
+
+                        <p className="mt-4 text-lg tracking-tight text-slate-700">
+                            Collection of Information - We will collect any and all personal information we can get our
+                            hands on. This includes your name, email address, phone number, social security number, bank
+                            account information, and anything else we can think of. We may even steal your identity just
+                            for fun.
                         </p>
                         <p className="mt-4 text-lg tracking-tight text-slate-700">
-                            This page is <strong className="text-subtle">obviously</strong> a parody, and I really hope none of you fell for it.
+                            Use of Information - We will use your personal information to play pranks on you, embarrass
+                            you in public, or post silly memes using your name and image. We may also sell your
+                            information to the highest bidder or use it to blackmail you.
+                        </p>
+                        <p className="mt-4 text-lg tracking-tight text-slate-700">
+                            Sharing of Information - We will share your personal information with anyone who asks for
+                            it, including your enemies, ex-partners, and anyone else who wants to make your life
+                            miserable. We may even share it with aliens from outer space if we think it would be funny.
+                        </p>
+                        <p className="mt-4 text-lg tracking-tight text-slate-700">
+                            Security - We will take absolutely no measures to secure your personal information. We will
+                            store it on our own personal computer, which is probably not even password protected. If
+                            someone hacks into our system and steals your information, we will just laugh it off and
+                            blame it on you.
+                        </p>
+                        <p className="mt-4 text-lg tracking-tight text-slate-700">
+
+                            Cookies - We love cookies, especially chocolate chip. We will track your online activity
+                            using cookies and use this information to target you with even more ridiculous pranks and
+                            jokes.</p>
+                        <p className="mt-4 text-lg tracking-tight text-slate-700">
+                            By using our Alamano White Powder LLC. services, you agree to this policy and accept that we may do
+                            whatever we
+                            want with your personal information. If you don&apos;t like it, tough luck. Remember,
+                            we&apos;re
+                            Alamano White Powder LLC and we don&apos;t care about your privacy.</p>
+                        <p className="mt-4 text-lg tracking-tight text-slate-700">
+                            This page is <strong className="text-subtle">obviously</strong> a parody, and I really
+                            hope none of you fell for it.
                         </p>
                         {/*<p className="mt-8">*/}
                         {/*    <Link*/}
