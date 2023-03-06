@@ -4,7 +4,6 @@ import { SectionHeading } from '@/components/SectionHeading'
 import {CheckIcon} from "@heroicons/react/20/solid";
 
 const steps = [
-  {name: 'Create account', description: 'Vitae sed mi luctus laoreet.', href: '#', status: 'complete'},
   {
     name: 'Create your wallet',
     description: 'Create a Metamask Wallet using either a desktop computer or mobile device. http://metamask.io',
